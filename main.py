@@ -131,6 +131,8 @@ def update_room_stat():
     """
         update_room_stat() : update the status of room from the sensor input
         e.g. json={'no': '1', 'status': 0/1}
+        0 - open
+        1 - closed
     """
     try:
         room_no = request.json['no']
